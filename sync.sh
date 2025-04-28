@@ -20,7 +20,7 @@ fi
 
 # there has been a change, update
 
-rsync $TARGET responses
+rsync -rv $TARGET responses
 
 git add -A
 git commit -m "responses updated  $(date)"
